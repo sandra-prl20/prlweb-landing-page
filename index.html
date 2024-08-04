@@ -1,157 +1,174 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Personal Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .typing-effect {
+            font-size: 2.5rem;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 0.15em solid rgb(124, 201, 246),rgb(231, 144, 245);
+            animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+            text-align: center;
+            margin: 0 auto;
+            color: rgb(209, 133, 230),rgb(130, 166, 232);
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Hello! I'm Sandra</h1>
-						
-					</header>
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: rgb(197, 212, 121); }
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#About" class="active">Introduction</a></li>
-							<li><a href="#Experience">Experience</a></li>
-							<li><a href="#Projects">Projects</a></li>
-							<li><a href="#Contact">Contact</a></li>
-						</ul>
-					</nav>
+        h1, h2, h3, h4 {
+            font-weight: bold;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        .animate__fadeInDown {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <span class="logo"><img src="images/logo.svg" alt="" /></span>
+            <h1 class="typing-effect animate__animated animate__fadeInDown">Hello! I'm Sandra</h1>
+        </header>
 
-						<!-- Introduction -->
-							<section id="About" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About ME!</h2>
-										</header>
-										<p>I'm Sandra, 3rd year Computer Science student at Indian Institute of 
-											Information Technology Kottayam. Passionate about AI/ML, a Full Stack Developer, 
-											a UI/UX designer </p>
-										
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								</div>
-							</section>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#About" class="active"><b>Introduction</b></a></li>
+                <li><a href="#Experience"><b>Experience</b></a></li>
+                <li><a href="#Projects"><b>Projects</b></a></li>
+                <li><a href="#Contact"><b>Contact</b></a></li>
+            </ul>
+        </nav>
 
-						<!-- First Section -->
-							<section id="Experience" class="main special">
-								<header class="major">
-									<h2>Work Experience</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
+        <!-- Main -->
+        <div id="main">
+            <!-- Introduction -->
+            <section id="About" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>About ME!</h2>
+                        </header>
+                        <p>I'm Sandra, a 3rd year Computer Science student at Indian Institute of Information Technology Kottayam. Passionate about AI/ML, a Full Stack Developer, and a UI/UX designer.</p>
+                    </div>
+                    <span class="image"><img src="images/pic01.jpg" alt="" class="animate__animated animate__zoomIn"/></span>
+                </div>
+            </section>
 
-										<h3>Project Intern </h3>
-										<p>Full Stack Dev Intern at National Informatics Center Ernakulam</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Design Lead</h3>
-										<p>Worked as Design lead at GDSC</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>ML Intern</h3>
-										<p>ML intern at Finlatics.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+            <!-- Experience -->
+            <section id="Experience" class="main special">
+                <header class="major">
+                    <h2>Work Experience</h2>
+                </header>
+                <ul class="features">
+                    <li>
+                        <span class="icon solid major style1 fas fa-laptop-code"></span>
+                        <h3>Project Intern</h3>
+                        <p>Full Stack Dev Intern at National Informatics Center Ernakulam</p>
+                    </li>
+                    <li>
+                        <span class="icon major style3 fas fa-copy"></span>
+                        <h3>Design Lead</h3>
+                        <p>Worked as Design lead at GDSC</p>
+                    </li>
+                    <li>
+                        <span class="icon major style5 fas fa-gem"></span>
+                        <h3>ML Intern</h3>
+                        <p>ML intern at Finlatics.</p>
+                    </li>
+                </ul>
+                <footer class="major">
+                    <ul class="actions special">
+                        <li><a href="generic.html" class="button">Learn More</a></li>
+                    </ul>
+                </footer>
+            </section>
 
-						<!-- Second Section -->
-						<section id="Projects" class="main special">
-							<header class="major">
-								<h2>Projects</h2>
-							</header>
-							<ul class="features">
-								<li>
-									<span class="icon solid major style1 fa-code"></span>
+            <!-- Projects -->
+            <section id="Projects" class="main special">
+                <header class="major">
+                    <h2>Projects</h2>
+                </header>
+                <ul class="features">
+                    <li>
+                        <span class="icon solid major style1 fas fa-tooth"></span>
+                        <h3>Smile Care</h3>
+                        <p>Dental Clinic Appointment Website</p>
+                    </li>
+                    <li>
+                        <span class="icon major style3 fas fa-calendar-alt"></span>
+                        <h3>CampusEventEase</h3>
+                        <p>Academic Event Management System</p>
+                    </li>
+                    <li>
+                        <span class="icon major style5 fas fa-copy"></span>
+                        <h3>Sales Prediction System</h3>
+                        <p>Machine Learning</p>
+                    </li>
+                </ul>
+                <footer class="major">
+                    <ul class="actions special">
+                        <li><a href="proj.html" class="button">Learn More</a></li>
+                    </ul>
+                </footer>
+            </section>
 
-									<h3>Smile Care </h3>
-									<p>Dental Clinic Appointment Website</p>
-								</li>
-								<li>
-									<span class="icon major style3 fa-copy"></span>
-									<h3>CampusEventEase</h3>
-									<p>Academic Event Management System</p>
-								</li>
-								<li>
-									<span class="icon major style5 fa-gem"></span>
-									<h3>Sales Prediction System</h3>
-									<p>Machine Learning.</p>
-								</li>
-							</ul>
-							<footer class="major">
-								<ul class="actions special">
-									<li><a href="proj.html" class="button">Learn More</a></li>
-								</ul>
-							</footer>
-						</section>
+            <!-- Contact -->
+            <section id="Contact" class="main special">
+                <header class="major">
+                    <h2>Contact Me!</h2>
+                </header>
+                <footer class="major">
+                    <ul class="actions special">
+                        <li><a href="https://www.linkedin.com/in/sandra-sabu-02462924a/" class="button primary">Connect Me</a></li>
+                        <li><a href="mailto:sandrasabu.prl20@gmail.com" class="button">E-mail</a></li>
+                    </ul>
+                </footer>
+            </section>
+        </div>
 
-							
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Connect Me!</h2>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/sandra-sabu-02462924a/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+            <p class="copyright">&copy; Untitled. Design: With 🤍 Sandra!</p>
+        </footer>
+    </div>
 
-						<!-- Get Started -->
-							<section id="Contact" class="main special">
-								<header class="major">
-									<h2>Contact Me!</h2>
-								
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://www.linkedin.com/in/sandra-sabu-02462924a/" class="button primary">Connect Me</a></li>
-										<li><a href="mailto:sandrasabu.prl20@gmail.com" class="button">E-mail</a></li>
-									</ul>
-								</footer>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						
-						<section>
-							<h2>Connect Me!</h2>
-							
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/sandra-sabu-02462924a/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design:With 🤍 Sandra !</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
